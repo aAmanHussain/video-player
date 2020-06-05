@@ -1,0 +1,48 @@
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  overflow: auto;
+  &:hover {
+    .overlay {
+      display: block !important;
+    }
+  }
+  .video-player {
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba($color: #000000, $alpha: 0.3);
+    .float-right {
+      float: right;
+    }
+    .rotate {
+      transform: rotateZ(45deg);
+    }
+    .overlay-header {
+      height: 10%;
+      background: #000000;
+    }
+    .overlay-body {
+      height: 70%;
+      .fa {
+        margin: 0px 10px;
+        cursor: pointer;
+      }
+    }
+    .overlay-footer {
+      height: 20%;
+      background: #000000;
+    }
+  }
+}
